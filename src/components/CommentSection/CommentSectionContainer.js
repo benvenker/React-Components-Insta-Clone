@@ -15,7 +15,6 @@ const CommentSection = props => {
       <CommentInput />
       {posts.map((post, i) => {
         return post.comments.map((comment, i) => {
-          console.log(comment);
           return <Comment comment={comment} />;
         });
       })}
