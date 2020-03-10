@@ -12,12 +12,12 @@ const CommentSection = props => {
   return (
     <div>
       {/* map through the comments data and return the Comment component */}
-      <CommentInput />
       {posts.map((post, i) => {
         return post.comments.map((comment, i) => {
           return <Comment comment={comment} />;
         });
       })}
+      <CommentInput />
     </div>
   );
 };
