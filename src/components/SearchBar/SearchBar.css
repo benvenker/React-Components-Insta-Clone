@@ -13,6 +13,9 @@
 .search-form input {
   text-align: center;
   color: #262626;
+  border-radius: 5px;
+  border-style: none;
+  border: 1px solid lightgray;
 }
 .image-wrapper {
   height: 50px;
@@ -28,4 +31,9 @@
 
 .social {
   width: 50px;
+}
+
+.fa-instagram {
+  font-size: 200%;
+  margin-top: 20%;
 }
