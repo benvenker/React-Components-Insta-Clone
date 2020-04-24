@@ -4,8 +4,7 @@
 import React, { useState } from "react";
 import dummyData from "../../dummy-data";
 
-const LikeSection = props => {
-  console.log(props);
+const LikeSection = (props) => {
   const [likes, setLikes] = useState(0);
 
   return (

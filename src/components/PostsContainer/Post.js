@@ -8,9 +8,10 @@ import "./Posts.css";
 import dummyData from "../../dummy-data";
 
 // pass props in this file to
-const Post = props => {
+const Post = (props) => {
   // set up state for the likes
-  const [posts, setPosts] = useState(dummyData);
+  // const [posts, setPosts] = useState(dummyData);
+  // console.log("Post props: ", props);
 
   return (
     <div className="post-border">
@@ -29,6 +30,8 @@ const Post = props => {
       <CommentSection
         postId={props.post.imageUrl}
         comments={props.post.comments}
+        setPosts={props.setPosts}
+        posts={props.posts}
       />
     </div>
   );
